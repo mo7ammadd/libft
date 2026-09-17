@@ -6,7 +6,7 @@
 /*   By: malnaam <malnaam@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 13:51:49 by malnaam           #+#    #+#             */
-/*   Updated: 2026/09/12 14:16:10 by malnaam          ###   ########.fr       */
+/*   Updated: 2026/09/17 12:58:38 by malnaam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	ft_putstr_fd(char *s, int fd)
 	if (!s)
 		return ;
 	i = 0;
-	len = ft_strlen(s);
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);

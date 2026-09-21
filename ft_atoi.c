@@ -36,3 +36,11 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+#include <stdio.h>
+int main(void)
+{
+	const char *str = "   --++12345";
+	int result = ft_atoi(str);
+	printf("The converted integer is: %d\n", result);
+	return 0;
+}

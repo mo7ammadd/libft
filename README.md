@@ -1,4 +1,4 @@
-*This activity has been created as part of the 42 curriculum by [malnaam].*
+*This activity has been created as part of the 42 curriculum by malnaam.*
 
 # Libft - Your very first own library
 

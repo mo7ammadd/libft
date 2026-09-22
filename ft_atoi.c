@@ -6,7 +6,7 @@
 /*   By: malnaam <malnaam@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 16:21:19 by malnaam           #+#    #+#             */
-/*   Updated: 2026/09/10 16:24:13 by malnaam          ###   ########.fr       */
+/*   Updated: 2026/09/22 10:30:53 by malnaam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,4 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (result * sign);
-}
-#include <stdio.h>
-int main(void)
-{
-	const char *str = "   --++12345";
-	int result = ft_atoi(str);
-	printf("The converted integer is: %d\n", result);
-	return 0;
 }

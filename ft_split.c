@@ -6,7 +6,7 @@
 /*   By: malnaam <malnaam@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 11:23:17 by malnaam           #+#    #+#             */
-/*   Updated: 2026/09/12 13:02:12 by malnaam          ###   ########.fr       */
+/*   Updated: 2026/09/25 14:43:11 by malnaam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -67,7 +67,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	res = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
+	res = malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!res)
 		return (NULL);
 	j = 0;

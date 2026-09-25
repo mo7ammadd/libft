@@ -6,7 +6,7 @@
 This project is part of the 42 curriculum. C programming can be quite tedious without access to the highly useful standard functions. This activity aims to help understand how these functions work by implementing them from scratch and learning to use them effectively. The goal is to create a personal C library (`libft.a`) containing a collection of general-purpose functions that will be heavily relied upon in future school assignments.
 
 ## Library Functions
-This library is a recreation of standard libc functions and additional utility functions, written strictly in accordance with the 42 Norm. 
+This library is a recreation of standard libc functions, additional utility functions, and linked list manipulation functions, written strictly in accordance with the 42 Norm. 
 
 ### Part 1 - Libc functions
 These functions have the same prototypes and implement the same behaviors as the originals, as defined in their `man` pages:
@@ -29,9 +29,21 @@ These functions are not in the libc, or are part of it but in a different form:
 * `ft_putendl_fd` - Outputs a string to a file descriptor, followed by a newline.
 * `ft_putnbr_fd` - Outputs an integer to a file descriptor.
 
+### Part 3 - Linked list functions
+These functions use the `t_list` structure to manipulate singly linked lists:
+* `ft_lstnew` - Creates a new list node with the given content.
+* `ft_lstadd_front` - Adds a new node at the beginning of a list.
+* `ft_lstsize` - Counts the number of nodes in a list.
+* `ft_lstlast` - Returns the last node of a list.
+* `ft_lstadd_back` - Adds a new node at the end of a list.
+* `ft_lstdelone` - Deletes and frees a single node's content and the node itself without freeing the next node.
+* `ft_lstclear` - Deletes and frees a given node and all its successors, setting the list pointer to `NULL`.
+* `ft_lstiter` - Iterates through a list and applies a function to each node's content.
+* `ft_lstmap` - Iterates through a list, applies a function to each node's content, and creates a new list from the results.
+
 ## Instructions
 To compile and use the library, run the following commands at the root of the repository:
-* `make` - Compiles the standard functions and creates the `libft.a` library.
+* `make` - Compiles the functions and creates the `libft.a` library.
 * `make clean` - Removes the object files (`.o`).
 * `make fclean` - Removes the object files and the `libft.a` binary.
 * `make re` - Recompiles the entire library from scratch.

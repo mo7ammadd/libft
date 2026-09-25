@@ -6,10 +6,10 @@
 /*   By: malnaam <malnaam@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 12:25:36 by malnaam           #+#    #+#             */
-/*   Updated: 2026/09/10 17:14:20 by malnaam          ###   ########.fr       */
+/*   Updated: 2026/09/25 15:28:22 by malnaam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)

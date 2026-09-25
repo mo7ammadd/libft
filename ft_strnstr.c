@@ -6,13 +6,13 @@
 /*   By: malnaam <malnaam@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 12:56:21 by malnaam           #+#    #+#             */
-/*   Updated: 2026/09/22 10:46:12 by malnaam          ###   ########.fr       */
+/*   Updated: 2026/09/23 09:14:48 by malnaam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;

@@ -6,7 +6,7 @@
 #    By: malnaam <malnaam@learner.42.tech>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/09 13:05:51 by malnaam           #+#    #+#              #
-#    Updated: 2026/09/17 12:53:26 by malnaam          ###   ########.fr        #
+#    Updated: 2026/09/24 13:05:47 by malnaam          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
@@ -42,4 +42,4 @@ re: fclean all
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
